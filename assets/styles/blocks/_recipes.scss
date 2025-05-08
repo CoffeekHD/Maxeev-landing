@@ -1,0 +1,102 @@
+.recipes {
+    position: relative;
+    background-color: var(--color-alt-red);
+    color: var(--color-light);
+    text-align: center;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: -50px;
+        left: 0;
+        background-image: url('../images/decorative/maxeev-4.png');
+        background-repeat: no-repeat;
+        width: 131px;
+        height: 142px;
+
+        @include tablet {
+            display: none;
+        }
+    }
+
+    &__title {
+        padding-top: 80px;
+        padding-bottom: 25px;
+        color: var(--color-light);
+
+        @include tablet {
+            padding-top: 40px;
+        }
+    }
+
+    &__text {
+        @include fluid-text(16, 24);
+
+        font-family: var(--font-second);
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 49px 28px;
+        margin-top: 34px;
+        margin-bottom: 40px;
+        justify-self: center;
+
+        @include tablet {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            gap: 20px;
+            overflow: hidden;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &-item {
+            max-width: 270px;
+            max-height: 342px;
+
+            &:nth-child(n+5) {
+                @include mobile-large {
+                    display: none;
+                }
+            }
+
+            @include tablet {
+                max-width: 230px;
+            }
+        }
+
+        &-image {
+            border: var(--border-large);
+            border-radius: 20px;
+        }
+
+        &-text {
+            @include fluid-text(13, 18);
+
+            margin-top: 15px;
+
+            @include tablet {
+                margin-top: 11px;
+            }
+        }
+    }
+
+    &__button {
+        @include fluid-text(16, 24);
+
+        color: var(--color-alt-red);
+        background-color: var(--color-light);
+        box-shadow: none;
+        font-weight: 700;
+        font-family: var(--font-second);
+        padding: 18px 73px;
+        border: none;
+        border-radius: 20px;
+        margin-bottom: 50px;
+
+        @include tablet {
+            margin-bottom: 40px;
+        }
+    }
+}

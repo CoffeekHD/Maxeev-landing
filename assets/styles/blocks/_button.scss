@@ -1,0 +1,44 @@
+.button {
+    @include fluid-text(16, 18);
+
+    border: var(--border-small);
+    border-radius: var(--border-radius-medium);
+    box-shadow: var(--shadow);
+    font-family: var(--font-second);
+    background: none;
+    font-weight: 700;
+    padding: 22px 35px;
+    transition: var(--transition-duration);
+
+    @include hover {
+        box-shadow: none;
+        background-color: transparent;
+        color: var(--color-alt-red);
+    }
+
+    @include laptop {
+        padding: 15px 20px;
+    }
+
+    &--red {
+        background-color: var(--color-alt-red);
+        color: var(--color-light);
+    }
+
+    &--link {
+        @include fluid-text(16, 18);
+
+        border: var(--border-small);
+        border-radius: var(--border-radius-medium);
+        padding: 22px 32px;
+        color: var(--color-alt-red);
+        font-family: var(--font-second);
+        font-weight: 700;
+
+        @include laptop {
+            display: inline-block;
+            text-align: center;
+            padding: 15px 20px;
+        }
+    }
+}

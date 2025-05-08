@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <title>Махеевъ</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__inner container">
+            <div class="header__logo">
+                <img class="header__image" src="assets/images/logo.svg" width="173px" height="56px" loading="lazy" alt="Махеевъ">
+            </div>
+            <nav class="header__menu">
+                <ul class="header__menu-list">
+                    <li class="header__menu-item"><a class="header__menu-link" href="#rules">Правила конкурса</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="#prizes">Призы</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="#products">Наша продукция</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="#recipes">Рецепты</a></li>
+                </ul>
+            </nav>
+            <div class="header__burger-menu burger-menu burger-menu__icon">
+                <span></span>
+                <span class="visually-hidden">Открыть меню</span>
+            </div>
+        </div>
+    </header>
+    <main class="page">
+        <section class="hero">
+            <div class="hero__container container">
+                <div class="hero__body">
+                    <h1 class="hero__title">Покажи вкус<br> лета с <span>“Махеевъ”</span></h1>
+                    <div class="hero__description">
+                        <p>Придумывайте легкие и быстрые рецепты с продукцией “Махеевъ”, делитесь ими и получайте возможность выиграть ценные призы!</p>
+                    </div>
+                    <div class="hero__buttons-wrapper">
+                        <button class="hero__button button button--red">Участвовать в конкурсе</button>
+                        <a class="hero__link button--link" href="#">Узнать подробнее</a>
+                    </div>
+                    <div class="hero__countdown countdown">
+                        <h2 class="countdown__title">
+                            до окончания конкурса:
+                        </h2>
+                        <div class="countdown__timer-wrapper">
+                            <span class="countdown__element">
+                                <span class="countdown__value">
+                                    <p>0</p>
+                                    <p>0</p>
+                                </span>
+                                <span class="countdown__text">Дней</span>
+                            </span>
+                            <span class="countdown__separator">:</span>
+                            <span class="countdown__element">
+                                <span class="countdown__value">
+                                    <p>0</p>
+                                    <p>0</p>
+                                </span>
+                                <span class="countdown__text">Часов</span>
+                            </span>
+                            <span class="countdown__separator">:</span>
+                            <span class="countdown__element">
+                                <span class="countdown__value">
+                                    <p>0</p>
+                                    <p>0</p>
+                                </span>
+                                <span class="countdown__text">Минут</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <img class="hero__image" src="assets/images/hero-image.png" width="560px" height="688px" loading="lazy" alt="">
+            </div>
+        </section>
+        <section class="info">
+            <div class="container">
+                <div class="info__container">
+                    <div class="info__text-top">
+                        <p><span>Лето - это волшебное время</span>, полное ярких и сочных красок. Многие ждут его, чтобы насладиться солнечными днями и устроить небольшое приключение с семьей или друзьями. <span>А еще плюс лета - большое количество</span> сочных и спелых сезонных <span>продуктов, из которых можно приготовить вкуснейшие блюда</span>.</p>
+                    </div>
+                    <div class="info__text-bottom">
+                        <p>Где бы вы ни проводили это время, <span>готовьте блюда с использованием продукции “Махеевъ” и присылайте свои яркие рецепты на конкурс. Покажите всем, какие цвета у вашего лета!<span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="rules" id="rules">
+            <div class="container">
+                <h2 class="rules__title title">правила конкурса</h2>
+                <ul class="rules__list">
+                    <li class="rules__list-item">
+                        <svg width="88" height="88" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M30.1286 23.29C30.9868 23.29 31.6841 23.1961 32.2205 23.0084C32.7836 22.8207 33.2395 22.5659 33.5882 22.2441C33.9368 21.9223 34.2184 21.5468 34.433 21.1177C34.6475 20.6886 34.8352 20.2327 34.9961 19.75H37.973V47.9091H33.548V26.4277H30.1286V23.29Z" fill="#E25E5E"/>
+                            <path d="M34.5 2.5C52.1731 2.5 66.5 16.8269 66.5 34.5C66.5 52.1731 52.1731 66.5 34.5 66.5C16.8269 66.5 2.5 52.1731 2.5 34.5C2.5 16.8269 16.8269 2.5 34.5 2.5Z" stroke="#E25E5E" stroke-width="5"/>
+                        </svg>                            
+                        <h3 class="rules__list-title title-small rules__title--one">приготовьте блюдо</h3>
+                        <div class="rules__list-text rules__text--one">
+                            <p>с кетчупом, маринадом<br> или горчицей “Махеевъ”<br> и сделайте пошаговый фоторецепт.</p>
+                        </div>
+                    </li>
+                    <li class="rules__list-item">
+                        <svg width="88" height="88" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M36.1627 26.6691C36.1627 25.4086 35.9482 24.5639 35.5191 24.1348C35.1168 23.6789 34.567 23.4509 33.8698 23.4509C33.1725 23.4509 32.6093 23.6655 32.1802 24.0945C31.778 24.4968 31.5768 25.2075 31.5768 26.2266V29.2436H27.3932V26.5082C27.3932 24.2286 27.943 22.4855 29.0425 21.2786C30.1689 20.045 31.8182 19.4282 33.9905 19.4282C36.1627 19.4282 37.7986 20.045 38.8982 21.2786C40.0245 22.4855 40.5877 24.2286 40.5877 26.5082C40.5877 28.0368 40.3464 29.418 39.8636 30.6516C39.4077 31.8852 38.8311 33.0116 38.1339 34.0307C37.4366 35.0498 36.6857 35.9884 35.8811 36.8466C35.0766 37.678 34.3525 38.4825 33.7089 39.2602C33.0652 40.0111 32.5557 40.762 32.1802 41.513C31.8048 42.2639 31.6841 43.055 31.8182 43.8864H40.1855V47.9091H27.3932V44.4495C27.3932 43.0818 27.6077 41.875 28.0368 40.8291C28.4659 39.7832 29.0023 38.8311 29.6459 37.973C30.3164 37.088 31.027 36.27 31.778 35.5191C32.5289 34.7414 33.2261 33.9234 33.8698 33.0652C34.5402 32.207 35.09 31.2684 35.5191 30.2493C35.9482 29.2302 36.1627 28.0368 36.1627 26.6691Z" fill="#E25E5E"/>
+                            <path d="M34.5 2.5C52.1731 2.5 66.5 16.8269 66.5 34.5C66.5 52.1731 52.1731 66.5 34.5 66.5C16.8269 66.5 2.5 52.1731 2.5 34.5C2.5 16.8269 16.8269 2.5 34.5 2.5Z" stroke="#E25E5E" stroke-width="5"/>
+                        </svg>
+                        <h3 class="rules__list-title title-small rules__title--two">Покажите</h3>
+                        <div class="rules__list-text rules__text--two">
+                            <p>на фото упаковку<br> “Махеевъ”.</p>
+                        </div>
+                    </li>
+                    <li class="rules__list-item">
+                        <svg width="88" height="88" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M35.9214 26.6691C35.9214 25.4086 35.7068 24.5639 35.2777 24.1348C34.8755 23.6789 34.3257 23.4509 33.6284 23.4509C32.9311 23.4509 32.368 23.6655 31.9389 24.0945C31.5366 24.4968 31.3355 25.2075 31.3355 26.2266V28.0368H27.1518V26.5082C27.1518 24.2286 27.7016 22.4855 28.8011 21.2786C29.9275 20.045 31.5768 19.4282 33.7491 19.4282C35.9214 19.4282 37.5573 20.045 38.6568 21.2786C39.7832 22.4855 40.3464 24.2286 40.3464 26.5082V27.2323C40.3464 30.2359 39.3139 32.1668 37.2489 33.025C38.3752 33.5077 39.1664 34.2586 39.6223 35.2777C40.105 36.27 40.3464 37.4902 40.3464 38.9384V41.1509C40.3464 43.4305 39.7832 45.187 38.6568 46.4207C37.5573 47.6275 35.9214 48.2309 33.7491 48.2309C31.5768 48.2309 29.9275 47.6275 28.8011 46.4207C27.7016 45.187 27.1518 43.4305 27.1518 41.1509V38.8177H31.3355V41.4325C31.3355 42.4516 31.5366 43.1757 31.9389 43.6048C32.368 44.007 32.9311 44.2082 33.6284 44.2082C34.3257 44.2082 34.8755 43.9936 35.2777 43.5645C35.7068 43.1355 35.9214 42.2907 35.9214 41.0302V38.8177C35.9214 37.5036 35.6934 36.5784 35.2375 36.042C34.7816 35.5057 34.0441 35.2375 33.025 35.2375H31.5366V31.2148H33.2664C34.0977 31.2148 34.7414 31.0002 35.1973 30.5711C35.68 30.142 35.9214 29.3643 35.9214 28.238V26.6691Z" fill="#E25E5E"/>
+                            <path d="M34.5 2.5C52.1731 2.5 66.5 16.8269 66.5 34.5C66.5 52.1731 52.1731 66.5 34.5 66.5C16.8269 66.5 2.5 52.1731 2.5 34.5C2.5 16.8269 16.8269 2.5 34.5 2.5Z" stroke="#E25E5E" stroke-width="5"/>
+                        </svg>                            
+                        <h3 class="rules__list-title title-small rules__title--three">напишите</h3>
+                        <div class="rules__list-text rules__text--three">
+                            <p>в названии рецепта<br> “Махеевъ”.</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="rules__buttons-container">
+                    <button class="rules__button button button--red">Участвовать в конкурсе</button>
+                    <a class="rules__link button--link" href="#">Подробные правила</a>
+                </div>
+            </div>
+        </section>
+        <section class="prizes" id="prizes">
+            <div class="container">
+                <h2 class="prizes__title title">Призы конкурса</h2>
+                <div class="prizes__text">
+                    <p>По итогам конкурса авторы лучших рецептов<br> получат ценные призы или наборы с продукцией “Махеевъ”!</p>
+                </div>
+                <ul class="prizes__list">
+                    <li class="prizes__list-item prize-2">
+                        <img class="prizes__list-image" src="assets/images/decorative/prize-2.png" width="195px" height="215px" loading="lazy" alt="Чайник Röndell RDE-1001">
+                        <svg width="72" height="72" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M36.1627 26.6691C36.1627 25.4086 35.9482 24.5639 35.5191 24.1348C35.1168 23.6789 34.567 23.4509 33.8698 23.4509C33.1725 23.4509 32.6093 23.6655 32.1802 24.0945C31.778 24.4968 31.5768 25.2075 31.5768 26.2266V29.2436H27.3932V26.5082C27.3932 24.2286 27.943 22.4855 29.0425 21.2786C30.1689 20.045 31.8182 19.4282 33.9905 19.4282C36.1627 19.4282 37.7986 20.045 38.8982 21.2786C40.0245 22.4855 40.5877 24.2286 40.5877 26.5082C40.5877 28.0368 40.3464 29.418 39.8636 30.6516C39.4077 31.8852 38.8311 33.0116 38.1339 34.0307C37.4366 35.0498 36.6857 35.9884 35.8811 36.8466C35.0766 37.678 34.3525 38.4825 33.7089 39.2602C33.0652 40.0111 32.5557 40.762 32.1802 41.513C31.8048 42.2639 31.6841 43.055 31.8182 43.8864H40.1855V47.9091H27.3932V44.4495C27.3932 43.0818 27.6077 41.875 28.0368 40.8291C28.4659 39.7832 29.0023 38.8311 29.6459 37.973C30.3164 37.088 31.027 36.27 31.778 35.5191C32.5289 34.7414 33.2261 33.9234 33.8698 33.0652C34.5402 32.207 35.09 31.2684 35.5191 30.2493C35.9482 29.2302 36.1627 28.0368 36.1627 26.6691Z" fill="#E25E5E"/>
+                            <path d="M34.5 2.5C52.1731 2.5 66.5 16.8269 66.5 34.5C66.5 52.1731 52.1731 66.5 34.5 66.5C16.8269 66.5 2.5 52.1731 2.5 34.5C2.5 16.8269 16.8269 2.5 34.5 2.5Z" stroke="#E25E5E" stroke-width="5"/>
+                        </svg>
+                        <h3 class="prizes__list-title title-small">Чайник Röndell<br> RDE-1001</h3>
+                    </li>
+                    <li class="prizes__list-item prize-1">
+                        <img class="prizes__list-image" src="assets/images/decorative/prize-1.png" width="157px" height="267px" loading="lazy" alt="Настольный блендер Röndell RDE-1250">
+                        <svg width="72" height="72" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M30.1286 23.29C30.9868 23.29 31.6841 23.1961 32.2205 23.0084C32.7836 22.8207 33.2395 22.5659 33.5882 22.2441C33.9368 21.9223 34.2184 21.5468 34.433 21.1177C34.6475 20.6886 34.8352 20.2327 34.9961 19.75H37.973V47.9091H33.548V26.4277H30.1286V23.29Z" fill="#E25E5E"/>
+                            <path d="M34.5 2.5C52.1731 2.5 66.5 16.8269 66.5 34.5C66.5 52.1731 52.1731 66.5 34.5 66.5C16.8269 66.5 2.5 52.1731 2.5 34.5C2.5 16.8269 16.8269 2.5 34.5 2.5Z" stroke="#E25E5E" stroke-width="5"/>
+                        </svg>                            
+                        <h3 class="prizes__list-title title-small">Настольный блендер<br> Röndell RDE-1250</h3>
+                    </li>
+                    <li class="prizes__list-item prize-3">
+                        <img class="prizes__list-image" src="assets/images/decorative/prize-3.png" width="242px" height="178px" loading="lazy" alt="Миксер Röndell RDE-1350">
+                        <svg width="72" height="72" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M35.9214 26.6691C35.9214 25.4086 35.7068 24.5639 35.2777 24.1348C34.8755 23.6789 34.3257 23.4509 33.6284 23.4509C32.9311 23.4509 32.368 23.6655 31.9389 24.0945C31.5366 24.4968 31.3355 25.2075 31.3355 26.2266V28.0368H27.1518V26.5082C27.1518 24.2286 27.7016 22.4855 28.8011 21.2786C29.9275 20.045 31.5768 19.4282 33.7491 19.4282C35.9214 19.4282 37.5573 20.045 38.6568 21.2786C39.7832 22.4855 40.3464 24.2286 40.3464 26.5082V27.2323C40.3464 30.2359 39.3139 32.1668 37.2489 33.025C38.3752 33.5077 39.1664 34.2586 39.6223 35.2777C40.105 36.27 40.3464 37.4902 40.3464 38.9384V41.1509C40.3464 43.4305 39.7832 45.187 38.6568 46.4207C37.5573 47.6275 35.9214 48.2309 33.7491 48.2309C31.5768 48.2309 29.9275 47.6275 28.8011 46.4207C27.7016 45.187 27.1518 43.4305 27.1518 41.1509V38.8177H31.3355V41.4325C31.3355 42.4516 31.5366 43.1757 31.9389 43.6048C32.368 44.007 32.9311 44.2082 33.6284 44.2082C34.3257 44.2082 34.8755 43.9936 35.2777 43.5645C35.7068 43.1355 35.9214 42.2907 35.9214 41.0302V38.8177C35.9214 37.5036 35.6934 36.5784 35.2375 36.042C34.7816 35.5057 34.0441 35.2375 33.025 35.2375H31.5366V31.2148H33.2664C34.0977 31.2148 34.7414 31.0002 35.1973 30.5711C35.68 30.142 35.9214 29.3643 35.9214 28.238V26.6691Z" fill="#E25E5E"/>
+                            <path d="M34.5 2.5C52.1731 2.5 66.5 16.8269 66.5 34.5C66.5 52.1731 52.1731 66.5 34.5 66.5C16.8269 66.5 2.5 52.1731 2.5 34.5C2.5 16.8269 16.8269 2.5 34.5 2.5Z" stroke="#E25E5E" stroke-width="5"/>
+                        </svg>                            
+                        <h3 class="prizes__list-title title-small">Миксер<br> Röndell RDE-13501</h3>
+                    </li>
+                </ul>
+                <div class="prizes__wrapper">
+                    <img class="prizes__wrapper-image" src="assets/images/decorative/maxeevBox.png" width="143px" height="208px" loading="lazy" alt="">
+                    <div class="prizes__wrapper-text">
+                        <p>+ 5 призовых наборов с продукцией «Махеевъ»!</p>
+                    </div>
+                </div>
+                <p class="prizes__bottom-text">
+                    Конкурс проводится с 15 июля по 15 августа 2022 г.
+                </p>
+            </div>
+        </section>
+        <section class="products" id="products">
+            <div class="container">
+                <h2 class="products__title title">наша продукция</h2>
+                <div class="swiper products__slider">
+                    <div class="swiper-wrapper products__swiper-wrapper">
+                      <div class="swiper-slide products__swiper-slide">
+                        <div class="slider-inner">
+                            <img src="assets/images/slider-Images/maxeev-1.png" width="240px" height="453px" loading="lazy" alt="Махеевъ Кетчуп шашлычный">
+                        </div>
+                      </div>
+                      <div class="swiper-slide products__swiper-slide">
+                        <div class="slide-inner">
+                            <img src="assets/images/slider-Images/maxeev-2.png" loading="lazy" width="189px" height="450px" alt="Махеевъ Горчица">
+                        </div>
+                      </div>
+                      <div class="swiper-slide products__swiper-slide">
+                        <img src="assets/images/slider-Images/maxeev-1.png" loading="lazy" width="240px" height="453px" alt="Махеевъ Кетчуп шашлычный">
+                      </div>
+                      <div class="swiper-slide products__swiper-slide">
+                        <img src="assets/images/slider-Images/maxeev-3.png" loading="lazy" width="240px" height="435px" alt="Махеевъ Маринад для курицы">
+                      </div>
+                      <div class="swiper-slide products__swiper-slide">
+                        <img src="assets/images/slider-Images/maxeev-1.png" loading="lazy" width="240px" height="453px" alt="Махеевъ Кетчуп шашлычный">
+                      </div>
+                      <div class="swiper-slide products__swiper-slide">
+                        <img src="assets/images/slider-Images/maxeev-2.png" loading="lazy" width="189px" height="450px" alt="Махеевъ Горчица">
+                      </div>
+                      <div class="swiper-slide products__swiper-slide">
+                        <img src="assets/images/slider-Images/maxeev-1.png" loading="lazy" width="240px" height="453px" alt="Махеевъ Кетчуп шашлычный">
+                      </div>
+                      <div class="swiper-slide products__swiper-slide">
+                        <img src="assets/images/slider-Images/maxeev-3.png" loading="lazy" width="240px" height="453px" alt="Махеевъ Маринад для курицы">
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  </div>
+            </div>
+        </section>
+        <section class="recipes" id="recipes">
+            <div class="container">
+                <h2 class="recipes__title title">лучшие рецепты</h2>
+                <div class="recipes__text">
+                    <p>Вдохновляйтесь рецептами других авторов, создавайте свои собственные и умножайте шансы на победу! Чем больше рецептов вы опубликуете - тем ближе призы!</p>
+                </div>
+                <ul class="recipes__list">
+                    <li class="recipes__list-item">
+                        <img class="recipes__list-image" src="assets/images/recipes/recipe-1.png" width="270px" height="270px" loading="lazy" alt="Карамельная коврижка с джемом «махеевъ» «кусочки лета»">
+                        <div class="recipes__list-text">
+                            <p>Карамельная коврижка с джемом «махеевъ» «кусочки лета»</p>
+                        </div>
+                    </li>
+                    <li class="recipes__list-item">
+                        <img class="recipes__list-image" src="assets/images/recipes/recipe-2.png" width="270px" height="270px" loading="lazy" alt="Морковный кекс-суфле с джемом «махеевъ» «кусочки лета»">
+                        <div class="recipes__list-text">
+                            <p>Морковный кекс-суфле с джемом «махеевъ» «кусочки лета»</p>
+                        </div>
+                    </li>
+                    <li class="recipes__list-item">
+                        <img class="recipes__list-image" src="assets/images/recipes/recipe-3.png" width="270px" height="270px" loading="lazy" alt="Малиновкая нежность с джемом «махеевъ» «кусочки лета»">
+                        <div class="recipes__list-text">
+                            <p>Малиновкая нежность с джемом «махеевъ» «кусочки лета»</p>
+                        </div>
+                    </li>
+                    <li class="recipes__list-item">
+                        <img class="recipes__list-image" src="assets/images/recipes/recipe-4.png" width="270px" height="270px" loading="lazy" alt="Десерт без выпечки со сметаной и клубничным джемом «махеевъ» «кусочки лета»">
+                        <div class="recipes__list-text">
+                            <p>Десерт без выпечки со сметаной и клубничным джемом «махеевъ» «кусочки лета»</p>
+                        </div>
+                    </li>
+                    <li class="recipes__list-item">
+                        <img class="recipes__list-image" src="assets/images/recipes/recipe-5.png" width="270px" height="270px" loading="lazy" alt="Сладкий сэндвич с джемом «махеевъ» «кусочки лета»">
+                        <div class="recipes__list-text">
+                            <p>Сладкий сэндвич с джемом «махеевъ» «кусочки лета»</p>
+                        </div>
+                    </li>
+                    <li class="recipes__list-item">
+                        <img class="recipes__list-image" src="assets/images/recipes/recipe-6.png" width="270px" height="270px" loading="lazy" alt="Рогалики из детства с джемом «махеевъ» «кусочки лета»">
+                        <div class="recipes__list-text">
+                            <p>Рогалики из детства с джемом «махеевъ» «кусочки лета»</p>
+                        </div>
+                    </li>
+                    <li class="recipes__list-item">
+                        <img class="recipes__list-image" src="assets/images/recipes/recipe-7.png" width="270px" height="270px" loading="lazy" alt="Гречневая галета с джемом «махеевъ» «кусочки лета»">
+                        <div class="recipes__list-text">
+                            <p>Гречневая галета с джемом «махеевъ» «кусочки лета»</p>
+                        </div>
+                    </li>
+                    <li class="recipes__list-item">
+                        <img class="recipes__list-image" src="assets/images/recipes/recipe-8.png" width="270px" height="270px" loading="lazy" alt="Творожное пирожное с вишней и джемом «махеевъ» «кусочки лета»">
+                        <div class="recipes__list-text">
+                            <p>Творожное пирожное с вишней и джемом «махеевъ» «кусочки лета»</p>
+                        </div>
+                    </li>
+                </ul>
+                <button class="recipes__button" type="button">Посмотреть еще</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <img class="footer__image" src="assets/images/footer-logo.svg" width="173px" height="56px" loading="lazy" alt="Махеевъ">
+                <p class="footer__text">
+                    ©Все права защищены
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/slider.js"></script>
+    <script src="assets/js/update-content.js"></script>
+    <script src="assets/js/burger-menu.js"></script>
+    <script src="assets/js/countdown.js"></script>
+</body>
+</html>

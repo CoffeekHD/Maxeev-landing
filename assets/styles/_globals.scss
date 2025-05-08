@@ -1,0 +1,28 @@
+body {
+    font-family: var(--font-base);
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit
+}
+
+.title {
+    @include fluid-text(25, 64);
+
+    font-family: var(--font-base);
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--color-alt-red);
+}
+
+.title-small {
+    @include fluid-text(20, 30);
+
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: var(--color-alt-red);
+}

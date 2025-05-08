@@ -1,0 +1,149 @@
+.hero {
+    margin-top: 28px;
+
+    @include tablet {
+        margin-top: 5px;
+    }
+
+    &__container {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        column-gap: 20px;
+
+        @include tablet {
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            justify-content:stretch;
+        }
+    }
+
+    &__body {
+        @include tablet {
+            display: contents;
+        }
+    }
+
+    &__title {
+        @include fluid-text(39, 83);
+        font-family: var(--font-monAmour);
+        font-weight: 500;
+        color: var(--color-dark-alt);
+        letter-spacing: -0.1em;
+        line-height: 1.14;
+
+        span {
+            color: var(--color-red);
+        }
+
+        @include tablet {
+            order: -2;
+        }
+    }
+
+    &__description {
+        @include fluid-text(17, 24);
+
+        margin-top: 38px;
+        margin-bottom: 40px;
+        letter-spacing: -0.04em;
+        font-family: var(--font-second);
+
+        @include tablet {
+            margin-top: 15px;
+            margin-bottom: 25px;
+            order: -2;
+        }
+    }
+
+    &__buttons-wrapper {
+
+        @include laptop {
+            display: grid;
+            gap: 10px;
+        }
+
+        @include tablet {
+            display: block;
+            margin-bottom: 35px;
+            order: -2;
+        }
+
+        @include mobile-large {
+            display: grid;
+        }
+    }
+
+    &__countdown {
+        position: relative;
+        margin-top: 40px;
+        margin-bottom: 50px;
+
+        &::after{
+            content: '';
+            position: absolute;
+            width: 59px;
+            height: 64px;
+            left: -4px;
+            bottom: -20px;
+            background-image: url('../images/decorative/leaf.png');
+            
+            @include tablet {
+                background-size: 85%;
+                width: 50px;
+                height: 45px;
+            }
+        }
+
+        @include tablet {
+            order: -1;
+            margin-top: 0;
+        }
+    }
+
+    &__button {
+        @include tablet {
+            order: -2;
+        }
+    }
+
+    &__link {
+        margin-left: 11px;
+        
+        @include laptop {
+            margin-left: 0;
+        }
+        
+        @include tablet {
+            order: -2;
+        }
+    }
+
+    &__image {
+        position: relative;
+        z-index: 200;
+        margin-block: -28px;
+        object-fit: contain;
+        object-position: bottom;
+        
+        @media(max-width: 1150px) {
+            width: 47%;
+        }
+
+        @include laptop {
+            width: 50%;
+        }
+
+        @include tablet {
+            order: -2;
+            max-width: 369px;
+            margin-top: 35px;
+        }
+
+        @include mobile-large {
+            width: 70%;
+            margin-block: -14px;
+        }
+    }
+}

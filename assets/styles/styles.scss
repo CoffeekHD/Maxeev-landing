@@ -1,0 +1,20 @@
+@import 'variables',
+        'fonts',
+        'mixins',
+        'utils',
+        'normalize',
+        'globals',
+        'media';
+
+@import 'blocks/swiper',
+        'blocks/products',
+        'blocks/info',
+        'blocks/countdown',
+        'blocks/header',
+        'blocks/burger-menu',
+        'blocks/hero',
+        'blocks/button',
+        'blocks/rules',
+        'blocks/prizes',
+        'blocks/recipes',
+        'blocks/footer';

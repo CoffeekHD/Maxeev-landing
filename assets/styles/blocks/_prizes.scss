@@ -1,0 +1,181 @@
+.prizes {
+    position: relative;
+    margin-top: 50px;
+    background-color: var(--color-alt-red);
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: -70px;
+        left: 70px;
+        width: 134px;
+        height: 185px;
+        background-image: url('../images/decorative/maxeev-2.png');
+        background-repeat: no-repeat;
+
+        @include laptop {
+            background-size: 80%;
+            left: 0;
+        }
+
+        @include tablet {
+            display: none;
+        }
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -70px;
+        right: 70px;
+        width: 134px;
+        height: 185px;
+        background-image: url('../images/decorative/maxeev-3.png');
+        background-repeat: no-repeat;
+
+        @include laptop {
+            background-size: 80%;
+            right: 0;
+        }
+
+        @include tablet {
+            display: none;
+        }
+    }
+
+    @include tablet {
+        margin-top: 30px;
+    }
+
+    &__title {
+        color: var(--color-light);
+        padding-top: 80px;
+        padding-bottom: 25px;
+
+        @include tablet {
+            padding-top: 40px;
+            padding-bottom: 25px;
+        }
+    }
+
+    &__text {
+        @include fluid-text(16, 24);
+
+        color: var(--color-light);
+        text-align: center;
+    }
+
+    &__list {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        color: var(--color-alt-red);
+        column-gap: 35px;
+        margin-bottom: 40px;
+
+        @include laptop {
+            column-gap: 20px;
+        }
+
+        @include tablet {
+            display: grid;
+            grid-template-columns: repeat(1, 300px);
+            row-gap: 25px;
+        }
+
+        &-item {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            margin-top: 163px;
+            background-color: var(--color-light);
+            border-radius: var(--border-radius-large);
+            box-shadow: var(--card-shadow);
+            padding-bottom: 25px;
+            text-align: center;
+            min-width: clamp(300px, 25vw, 367px);
+
+            svg {
+                width: clamp(59px, 13vw, 72px);
+            }
+
+            &:first-child {
+                min-height: 298px;
+
+                @include tablet {
+                    min-height: 339px;
+                }
+            }
+
+            &:nth-of-type(2) {
+                min-height: 339px;
+
+                @include tablet {
+                    min-height: 298px;
+                }
+            }
+
+            &:last-child {
+                min-height: 249px;
+            }
+
+            @include laptop {
+                min-width: clamp(235px, 30vw, 300px);
+            }
+        }
+
+        &-title {
+            margin-top: 25px;
+        }
+
+        &-image {
+            position: absolute;
+            top: -130px;
+
+            @include tablet {
+                top: -110px;
+            }
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 24px;
+        margin-bottom: 21px;
+
+        @include mobile-large {
+            margin-bottom: 40px;
+        }
+        
+
+        @include mobile-large {
+            flex-direction: column;
+            text-align: center;
+            row-gap: 20px
+        }
+
+        &-text {
+            @include fluid-text(20, 30);
+            
+            color: var(--color-light);
+            max-width: 316px;
+            font-weight: 700;
+        }
+    }
+
+    &__bottom-text {
+        @include fluid-text(18, 28);
+        color: var(--color-light);
+        text-align: center;
+        font-weight: 700;
+        padding-bottom: 50px;
+
+        @include tablet {
+            padding-bottom: 30px;
+        }
+    }
+}

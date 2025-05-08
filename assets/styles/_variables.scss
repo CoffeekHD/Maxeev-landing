@@ -1,0 +1,29 @@
+:root {
+    --color-dark: #000000;
+    --color-dark-alt: #312A2A;
+    --color-light: #ffffff;
+    --color-red: #D52A20;
+    --color-alt-red: #E25E5E;
+
+    --font-base: 'Gilroy', sans-serif;
+    --font-second: 'Nunito', sans-serif;
+    --font-monAmour: 'MonAmourOne', sans-serif;
+    --font-Bebas: 'BebasNeueCyrillic', sans-serif;
+
+    --container-width: 1170px;
+    --container-padding-x: 15px;
+
+    --border-small: 1px solid var(--color-alt-red);
+    --border-large: 3px solid var(--color-alt-red);
+
+    --border-radius-small: 11px;
+    --border-radius-medium: 12px;
+    --border-radius-large: 15px;
+    --border-radius-extra-large: 27px;
+
+    --shadow: 1px 2px 0 0 #a33b3b;
+    --card-shadow: 0 14px 14px 0 rgba(0, 0, 0, 0.17);
+    --card-shadow-alt:  0 18px 23px 0 rgba(0, 0, 0, 0.05);
+
+    --transition-duration: 0.2s;
+}

@@ -1,0 +1,85 @@
+.header {
+    position: sticky;
+    z-index: 1000;
+    background-color: var(--color-light);
+    padding-top: 35px;
+    padding-bottom: 35px;
+    width: 100%;
+    top: 0;
+
+    @include tablet {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    &__inner {
+        display: flex;
+        column-gap: 108px;
+        align-items: center;
+
+        @include laptop {
+            column-gap: 85px;
+        }
+
+        @include tablet {
+            column-gap: 50px;
+            justify-content: space-between;
+        }
+    }
+
+    &__logo {
+       @include mobile-first-small {
+        max-width: 30%
+       } 
+    }
+
+    &__menu {
+        
+        @include tablet {
+            @include abs-center;
+
+            display: none;
+            position: fixed !important;
+            background-color: var(--color-light);
+            padding-top: 135px;
+            width: 100vw;
+            height: 100vh;
+            z-index: 900;
+        }
+        
+        &-list {
+            --gap: 58px;
+            display: flex;
+            column-gap: var(--gap);
+
+            @include laptop {
+                --gap: 30px;
+            }
+
+            @include tablet {
+                text-align: center;
+                flex-direction: column;
+                row-gap: 50px;
+            }
+        }
+
+        &-item {
+            font-family: var(--font-second);
+            font-size: 18px;
+            font-weight: 400;
+            transition: var(--transition-duration);
+
+            @include hover {
+                color: var(--color-red);
+            }
+
+            @include laptop {
+                font-size: clamp(16px, 2vw, 18px);
+            }
+        }
+    }
+
+    &__menu._active {
+        display: block;
+    }
+}

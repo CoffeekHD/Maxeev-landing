@@ -1,0 +1,62 @@
+.swiper {
+    &-button-prev {
+        width: 49px !important;
+        height: 49px !important;
+        
+        &::after {
+            color: var(--color-light);
+            background-color: var(--color-alt-red);
+            width: 49px !important;
+            height: 49px !important;
+            font-size: 15px !important;
+            border-radius: 100% !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &-button-next {
+        width: 49px !important;
+        height: 49px !important;
+
+        &::after {
+            color: var(--color-light);
+            background-color: var(--color-alt-red);
+            width: 49px !important;
+            height: 49px !important;
+            font-size: 15px !important;
+            border-radius: 100% !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &-pagination-bullet {
+        width: 22px !important;
+        height: 22px !important;
+        border: var(--border-small);
+        background-color: transparent !important;
+        opacity: 1 !important;
+        margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 20px) !important;
+
+        @include tablet {
+            width: 15px !important;
+            height: 15px !important;
+            margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 10px) !important;
+        }
+
+        @include mobile-large {
+            display: none !important;
+        }
+    }
+
+    &-pagination-bullet-active {
+        background-color: var(--color-alt-red) !important;
+    }
+}
+
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+    position: relative;
+}
